@@ -5,7 +5,7 @@
 
 /*
  * Regexp for remove prefix in ISBN number.
- * Example prefixes to remove:
+ * Example prefixes which will be removed:
  * ISBN number
  * ISBN: number
  * ISBN-10 number
