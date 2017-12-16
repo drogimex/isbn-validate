@@ -1,2 +1,5 @@
-node_modules/
-nbproject/
+node_modules
+nbproject
+.eslintrc.js
+.gitignore
+.npmignore
