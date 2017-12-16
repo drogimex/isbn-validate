@@ -7,13 +7,13 @@
 
 Validator check ISBN in format ISBN-10 and ISBN-13.
 
-##Instalation##
+## Instalation ##
 ```javascript
 npm install isbn-validate
 ```
 
 
-##3Simple using##
+## Simple using ##
 For use ISBN validator you have to import 'isbn-validate' and call static method ISBN.Validate. This method accept one argument - isbn number to validate. ISBN should be string type, but number type also is right (number will converted to string with global method Number.prototype.toString).
 
 *Method ISBN.Validate always returns boolean value TRUE or FALSE.*
@@ -29,8 +29,9 @@ ISBN.Validate( '048665088A' );    //false - invalid letter 'A'
 ISBN.Validate( '03064061521' );   //false - to many digits
 ```
 **Optional prefixes in ISBN nubers**
+
 ISBN number is checked with regular expression, which allowed optional prefixes. Example prefixes which will be removed after validate control digit in ISBN:
-```javascript
+```
 ISBN number
 ISBN: number
 ISBN-10 number
@@ -39,6 +40,7 @@ ISBN-10: number
 ISBN-13: number
 
 and with small letters:
+
 isbn number
 isbn: number
 isbn-10 number
@@ -47,7 +49,7 @@ isbn-10: number
 isbn-13: number
 ```
 After 'ISBN' have to been one space, char ':' or symbol of ISBN type (10 or 13). Always before whole number have to been one space! For example the following ISBN numbers will validated as incorrect:
-```javascript
+```
 ISBNnumber
 ISBN:number
 ISBN-10number
@@ -56,6 +58,7 @@ ISBN-10:number
 ISBN-13:number
 ```
 **Char 'X' or 'x' as control digit**
+
 In INSB-13 is allowed char 'X' or 'x' as last digit (control digit), when checksum for number is equal 10. In ISBN-13 number char 'X' and 'x' is not allowed.
 
 <!-- vars -->
