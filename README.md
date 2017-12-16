@@ -22,7 +22,7 @@ For use ISBN validator you have to import 'isbn-validate' and call static method
 ```javascript
 const ISBN = require( 'isbn-validate' );
 
-ISBN.Valirate( '048665088X' );    //true - ISBN-13
+ISBN.Validate( '048665088X' );    //true - ISBN-13
 ISBN.Validate( '9788371815102' ); //true - ISBN-13
 
 ISBN.Validate( '048665088A' );    //false - invalid letter 'A'
