@@ -1,6 +1,6 @@
 {
   "name": "isbn-validate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simply ISBN validator for ISBN-10 and ISBN-13.",
   "main": "isbn-validate.js",
   "scripts": {
