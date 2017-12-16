@@ -20,7 +20,7 @@
  * \x20+        minimum one space
  * /i           case insensitive
  */
-export const regPrefix = /^ISBN(?:-1[03])?:?\x20+/i;
+const PREFIX = /^ISBN(?:-1[03])?:?\x20+/i;
 
 /*
  * Regexp for validate ISBN (only nubers or char "X").
@@ -35,4 +35,9 @@ export const regPrefix = /^ISBN(?:-1[03])?:?\x20+/i;
  *    |\d{13}  or 13 digits (ISBN-13)
  * )$/         and of string
  */
-export const regISBN = /^(?:\d{9}[\dXx]|\d{13})$/;
+const ISBN = /^(?:\d{9}[\dXx]|\d{13})$/;
+
+module.exports = {
+    PREFIX,
+    ISBN
+};
